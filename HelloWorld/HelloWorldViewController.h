@@ -10,5 +10,6 @@
 
 @interface HelloWorldViewController : UIViewController
 - (IBAction)changeGreeting:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
