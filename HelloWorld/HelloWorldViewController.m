@@ -12,9 +12,15 @@
 
 @end
 
-@implementation HelloWorldViewController
+@implementation HelloWorldViewController {
+@private
+    NSString *_userName;
+}
+
 @synthesize textField;
 @synthesize label;
+@synthesize userName = _userName;
+
 
 - (void)viewDidLoad
 {
@@ -36,5 +42,17 @@
 }
 
 - (IBAction)changeGreeting:(id)sender {
+    self.userName = self.textField.text;
+
+    NSString *nameString = self.userName;
+
+    if (0 == [nameString length])
+    {
+        nameString = @"World";
+    }
+
+    NSString *greeting = [[NSString alloc] initWithFormat:@"Hellow, %@!", nameString];
+
+    self.label.text = greeting;
 }
 @end
