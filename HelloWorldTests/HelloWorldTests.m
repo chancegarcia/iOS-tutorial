@@ -3,7 +3,7 @@
 //  HelloWorldTests
 //
 //  Created by Chance Garcia on 04/24/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 chancegarcia.com. All rights reserved.
 //
 
 #import "HelloWorldTests.h"
