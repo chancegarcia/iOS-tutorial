@@ -55,4 +55,13 @@
 
     self.label.text = greeting;
 }
+
+- (BOOL) textFieldShouldReturn:(UITextField *) theTextField{
+    if (theTextField == self.textField)
+    {
+        [theTextField resignFirstResponder];
+    }
+
+    return YES;
+}
 @end
