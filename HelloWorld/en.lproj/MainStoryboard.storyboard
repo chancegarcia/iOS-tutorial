@@ -47,6 +47,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="label" destination="S9v-t4-afd" id="D1c-Tc-Zft"/>
                         <outlet property="textField" destination="coM-9O-lpG" id="17S-zM-ejk"/>
                     </connections>
                 </viewController>
@@ -58,6 +59,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HelloWorldViewController.h"/>
             <relationships>
                 <relationship kind="action" name="changeGreeting:"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
             </relationships>
         </class>
